@@ -1,0 +1,147 @@
+.categoryDisplay {
+    width: 100vw;
+    height: 100vh ;
+    display: flex;
+
+    .txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-top: 10%;
+        width: 70%;
+
+        h1 {
+            color: var(--main-color);
+            font-family: var(--title-ff);
+        }
+
+        h3 {
+            color: var(--secondary-color)
+        }
+
+        h4 {
+            padding-inline: 2em;
+            text-align: center;
+        }
+
+        p {
+            font-family: var(--title-ff);
+            color: var(--txt2);
+            margin-top: 1em;
+            cursor: pointer;
+        }
+
+    }
+
+    .img-cont {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+.facts{
+    width: 100vw;
+    height: 100vh;
+    min-height: fit-content;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    .facts-txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            color: var(--main-color);
+            font-family: var(--title-ff);
+        }
+    }
+    .info{
+        display: flex;
+        // flex-direction: column;
+        padding-block: 2em;
+        padding-inline: 2em;
+        justify-content: center;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        .info-txt{
+            width: 50% !important;
+            display: flex;
+            flex-direction: column;
+            h2{
+                padding-bottom: .5em;
+                font-family: var(--title-ff);
+            }
+            h5{
+                padding-bottom: 10px;
+            }
+            
+        }
+        .info-img{
+            max-width: 50% !important;
+            img{
+                width: 100%;
+                max-width: 30vw;
+            }
+        }
+        &:nth-child(3){
+            flex-direction: row-reverse;
+        }
+    }
+}
+.subcategoryPets {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        color: var(--main-color);
+        font-family: var(--title-ff);
+    }
+
+    .pet-cont {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        margin-top: 2em;
+        .pet-card {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            .img-cont {
+                width: 200px;
+                height: 200px; 
+                border-radius: 50%;
+                overflow: hidden; 
+                position: relative;
+                &:hover img{
+                    rotate: 180deg;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    display: block;
+                    transition: 3s;
+                }
+            }
+            
+        }
+    }
+}
