@@ -7,8 +7,17 @@ import allPets from "../../data/allPets";
 import { Link } from "react-router-dom";
 
 const CategoryPet = () => {
-  const { categoryId } = useParams();
-  const category = allCategories.find((e) => e.id === Number(categoryId));
+  const { categoryName } = useParams();
+  const decodedName = decodeURIComponent(categoryName);
+
+  const category = allCategories.find(
+    (cat) => cat.name.toLowerCase() === decodedName.toLowerCase(),
+  );
+
+  /*I want to check if the category the user chose matches the categroy of the pets in the allPets data file, then show only matching pets*/
+  if (!category)
+    return <h1 style={{ padding: "10vh" }}>Category not found... :(</h1>;
+
   const subCategoryPets = allPets.filter(
     (pet) => pet.category === category.name,
   );
@@ -16,10 +25,6 @@ const CategoryPet = () => {
   const cons = category.facts.cons;
   const goodFit = category.facts.goodFitFor;
   const badFit = category.facts.badFitFor;
-
-  /*I want to check if the category the user chose matches the categroy of the pets in the allPets data file, then show only matching pets*/
-  if (!category)
-    return <h1 style={{ padding: "10vh" }}>Category not found... :(</h1>;
   return (
     <>
       <Navbar />
@@ -39,7 +44,7 @@ const CategoryPet = () => {
 
       <div className="facts">
         <div className="facts-txt">
-            <span className="note">Facts</span>
+          <span className="note">Facts</span>
           <h1>What about {category.name} ?</h1>
           <p>Let's explore more about this category.</p>
         </div>
@@ -55,11 +60,9 @@ const CategoryPet = () => {
           </div>
         </div>
 
-
-
         <div className="info2 info">
           <div className="info-txt">
-          <h2>Cons of having {category.name}</h2>
+            <h2>Cons of having {category.name}</h2>
             {cons.map((cons, i) => (
               <h5 key={i}>{cons}</h5>
             ))}
@@ -82,7 +85,10 @@ const CategoryPet = () => {
             subCategoryPets.map((pet) => (
               <div key={pet.id} className="pet-card">
                 <div className="img-cont">
-                  <Link className="a" to={`/category/${category.name}/${pet.name}`}>
+                  <Link
+                    className="a"
+                    to={`/category/${category.name}/${pet.name}`}
+                  >
                     <img src={pet.img} alt={pet.name} />
                   </Link>
                 </div>

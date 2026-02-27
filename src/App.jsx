@@ -12,11 +12,11 @@ function App() {
       element: <Home />
     },
     {
-      path: "/category/:categoryId",
+      path: "/category/:categoryName",
       element: <CategoryPet />
     },
     {
-      path: "/category/:categoryId/:petName",
+      path: "/category/:categoryName/:petName",
       element: <Pet />
     }
   ])

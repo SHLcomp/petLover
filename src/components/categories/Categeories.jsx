@@ -13,7 +13,7 @@ const Categeories = () => {
         {allCategories.map((category) => {
           return (
             <div className="category">
-              <Link className="a" to={`/category/${category.id}`}>
+              <Link className="a" to={`/category/${category.name}`}>
                 <div className="img-con">
                   <img src={category.img} alt="" />
                 </div>
