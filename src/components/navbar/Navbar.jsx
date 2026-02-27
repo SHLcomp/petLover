@@ -24,19 +24,10 @@ const Navbar = () => {
   };
   useEffect(() => {
     //navbar menu
-    switch (locate.pathname) {
-      case "/":
-        setMenu("Home");
-        break;
-      case "/about":
-        setMenu("About");
-        break;
-      case "/blog":
-        setMenu("Blog");
-        break;
-      case "/category/:categoryId":
-        setMenu("Categories");
-    }
+    if (locate.pathname === "/") setMenu("Home");
+    else if (locate.pathname.startsWith("/category")) setMenu("Categories");
+    else if (locate.pathname === "/blog") setMenu("Blog");
+    else if (locate.pathname === "/about") setMenu("About");
   }, [locate.pathname]);
 
   useEffect(() => {
