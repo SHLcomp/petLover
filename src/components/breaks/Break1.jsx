@@ -1,5 +1,5 @@
 import React from 'react'
-import './break1.scss';
+import './Break1.scss';
 
 
 const Break1 = () => {
