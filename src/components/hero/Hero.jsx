@@ -8,7 +8,7 @@ import { HashLink } from "react-router-hash-link";
 
 const Hero = () => {
   return (
-    <div className="hero noise">
+    <div className="hero noise fade">
       <div className="img-cont">
         <img className="horse" src={horse} alt="" />
         <img className="bird" src={hummingBird} alt="" />
