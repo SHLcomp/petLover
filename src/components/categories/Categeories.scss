@@ -3,6 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 4em;
+    h1{
+        font-family: var(--title-ff);
+        color: var(--main-color);
+    }
 
 
 
@@ -19,11 +24,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 1em;
 
 
             .img-con {
-                width: 100px;
-                height: 100px; 
+                width: 10vw;
+                height: 10vw; 
                 border-radius: 50%;
                 overflow: hidden; 
                 cursor: pointer;

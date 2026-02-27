@@ -36,6 +36,8 @@
 - profile page for the users
 - dashboard for me :)
 
+
+
 3. Website structure
 
 - Navbar
@@ -45,6 +47,7 @@
 - Invite to adopt a pet by showing different pets, playful/quite/etc ones
 - Interactive quiz (to choose which pet is the perfect for the user depending on their situation)
 - Generating monthly cost of each chosen pet (pet budget calculator)
+- Contact/Comment option
 - Login/Sign in option
 - About me section
 - Footer

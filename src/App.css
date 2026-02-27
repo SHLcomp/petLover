@@ -75,6 +75,12 @@ body {
   font-family: var(--fancy-ff);
   font-size: xx-small;
 }
+.break{
+  width: 100vw;
+  min-height: fit-content;
+  padding-block: 3em;
+  background: var(--break-color);
+}
 
 /* root variable */
 :root {
@@ -89,6 +95,8 @@ body {
   --nav-bg: transparent;
   --cta-color: #93a5f6;
   --txt2: #ffffff80;
+
+  --break-color: #93a5f667;
 }
 /* Light Mode overrides */
 body[data-theme="pink-light"] {

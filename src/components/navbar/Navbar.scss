@@ -9,6 +9,7 @@ nav {
     // color: var(--light-txt) !important;
     z-index: 1000 !important;
     position: relative;
+    font-size: 1.2em;
 
     .title {
         display: flex;
@@ -77,7 +78,9 @@ nav {
         gap: 1em;
         align-items: center;
         h3 {
-            padding: 2px 10px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 1em;
         }
     }
 }

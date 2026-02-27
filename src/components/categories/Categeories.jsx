@@ -7,7 +7,8 @@ const Categeories = () => {
   return (
     <div className="categories" id="categories">
       <span className="note">Categories</span>
-      <h1>Pet Categories</h1>
+      <h1>Which One is Your Pet?</h1>
+      <p>Here are some pet categories choose one and read more about them!</p>
       <div className="categories-cont">
         {allCategories.map((category) => {
           return (
