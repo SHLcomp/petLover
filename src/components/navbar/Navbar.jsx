@@ -54,7 +54,7 @@ const Navbar = () => {
           <li className={menu === "Home" ? "active" : ""}>Home</li>
         </Link>
         <HashLink to={"/#categories"} className="a">
-          <li className={menu === "Categories" ? "active" : ""}>Categories</li>
+          <li className={menu === "Categories" ? "active" : ""}>Pets</li>
         </HashLink>
         <Link to={"/blog"} className="a">
           <li className={menu === "Blog" ? "active" : ""}>Blog</li>

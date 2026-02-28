@@ -21,16 +21,17 @@
             width: 100%;
 
             &.bird {
-                width: 10vw;
-                left: 50%;
-                top: 1em;
+                width: 12vw;
+                left: 70%;
+                top: 4em;
                 rotate: -23deg;
                 transform: rotateY(180deg);
                 z-index: -1 !important;
+                display: none;
             }
 
-            &.horse {
-                transform: rotateY(180deg);
+            &.dog {
+                // transform: rotateY(180deg);
                 width: 50vw;
                 left: -4em;
                 top: 3em;

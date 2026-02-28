@@ -1,8 +1,9 @@
 import React from "react";
 import "./Hero.scss";
-import horse from "../../assets/arabianHorse1.png";
+import dog from "../../assets/german_shepherd2.png";
 import hummingBird from "../../assets/hummingbird4.png";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 // import dogs from "../../assets/german_shepherd2.png";
 // import pigeon from "../../assets/pigeon2.png";
 
@@ -10,7 +11,7 @@ const Hero = () => {
   return (
     <div className="hero noise fade">
       <div className="img-cont">
-        <img className="horse" src={horse} alt="" />
+        <img className="dog" src={dog} alt="" />
         <img className="bird" src={hummingBird} alt="" />
         {/* <img className="dogs" src={dogs} alt="" /> */}
         {/* <img className="pigeon" src={pigeon} alt="" /> */}
@@ -27,7 +28,7 @@ const Hero = () => {
         <div className="cta-cont">
           <h4>Explore and read more about your pets!</h4>
           <div className="ctas">
-            <HashLink className="a" to={"/#categories"}><h3 className="cta">Read about your pet!</h3></HashLink>
+            <Link className="a" to={"/learnMore"}><h3 className="cta">Read about your pet!</h3></Link>
             <HashLink className="a" to={"/#quiz"}><h3 className="cta">Thinking to adopt?</h3></HashLink>
           </div>
         </div>

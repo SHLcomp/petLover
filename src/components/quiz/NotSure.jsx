@@ -1,5 +1,6 @@
 import React from 'react'
 import "./NotSure.scss"
+import { Link } from 'react-router-dom'
 
 const NotSure = () => {
   return (
@@ -12,8 +13,8 @@ const NotSure = () => {
           <p>Don't waste your energy on a pet that is not a good fit for you, remember to do your research before bringing a soul into your place.</p>
           <p>Try to pick a pet that suits your lifestyle and budget.</p>
           <div className="ctas">
-            <h3 className="cta">Take quiz</h3>
-            <h3 className='cta2'>I already know my pet</h3>
+            <Link className='a' to={"/quiz"}><h3 className="cta">Take quiz</h3></Link>
+            <Link className='a' to={"/learnMore"}><h3 className='cta2'>I already know my pet</h3></Link>
           </div>
         </div>
         <div className="img-cont">

@@ -1,0 +1,39 @@
+.aboutSection{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    align-items: center;
+    padding-inline: 3em;
+    padding-block: 5em;
+    .txt{
+        font-size: 1.2em;
+        width: 50%;
+        h1{
+            color: var(--main-color);
+            font-family: var(--title-ff);
+        }
+        .ctas{
+            display: flex;
+            margin-top: 2em;
+        }
+    }
+    .img-cont{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .circle{
+            background: var(--accent-color);
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            img{
+                position: absolute;
+                transform: translate(-25%, -20%) rotate(25deg);
+                width: 180%;
+                transition: transform 0.4s ease;
+            }
+        }
+    }
+}

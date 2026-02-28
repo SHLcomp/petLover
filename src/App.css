@@ -40,7 +40,7 @@ body {
     background 0.8s,
     color 0.8s; /* instead of transition:0.8s; because it makes the whole .cta2 disappear with GSAP :) */
   &:hover {
-    background: var(--main-color);
+    background: var(--secondary-color);
     color: var(--txt);
   }
 }
@@ -73,13 +73,13 @@ body {
   width: fit-content;
   border-radius: 30px;
   font-family: var(--fancy-ff);
-  font-size: xx-small;
+  font-size: small;
 }
 .break {
   width: 100vw;
   min-height: fit-content;
   padding-block: 3em;
-  background: var(--break-color);
+  background: var(--break-bg);
 }
 .line {
   position: relative;
@@ -101,6 +101,9 @@ body {
   mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 }
 
+.glow{
+  filter: drop-shadow(2px 3px 10px var(--main-color));
+}
 /* root variable */
 :root {
   --main-ff: "Delius Swash Caps";
@@ -114,8 +117,10 @@ body {
   --nav-bg: transparent;
   --cta-color: #93a5f6;
   --txt2: #ffffff80;
-
-  --break-color: #93a5f667;
+  
+  --accent-color: #bcddec;
+  --break-bg: #93a5f667;
+  --input-bg: transparent;
 }
 /* Light Mode overrides */
 body[data-theme="pink-light"] {
@@ -140,6 +145,8 @@ body[data-theme="pink-dark"] {
   --nav-bg: transparent;
   --cta-color: #ee93f6;
   --txt2: #ffffff80;
+
+  
 }
 
 body[data-theme="green-dark"] {
@@ -154,4 +161,6 @@ body[data-theme="green-dark"] {
   --nav-bg: transparent;
   --cta-color: #bcf693;
   --txt2: #ffffff80;
+
+  --accent-color: #c7d6a1;
 }
