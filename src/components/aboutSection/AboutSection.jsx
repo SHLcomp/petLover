@@ -4,7 +4,7 @@ import img from "../../assets/pigeon2.png"
 
 const AboutSection = () => {
   return (
-    <div className="aboutSection line">
+    <div className="aboutSection">
       <div className="txt">
         <span className="note">About</span>
         <h1>

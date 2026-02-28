@@ -74,6 +74,7 @@ body {
   border-radius: 30px;
   font-family: var(--fancy-ff);
   font-size: small;
+  color: black;
 }
 .break {
   width: 100vw;
@@ -125,13 +126,14 @@ body {
 /* Light Mode overrides */
 body[data-theme="pink-light"] {
   --link-color: #000;
-  --main-body-bg: white;
+  --main-body-bg: radial-gradient(circle, #93a1dc 10%, #4c6b94 85%);
   --main-color: #ca31d8;
   --secondary-color: #ee93f6;
   --txt: black;
   --nav-bg: transparent;
   --cta-color: #ca31d8;
   --txt2: #00000080;
+  --input-bg: rgba(147, 153, 185, 0.566);
 }
 body[data-theme="pink-dark"] {
   --main-ff: "Delius Swash Caps";
@@ -150,6 +152,22 @@ body[data-theme="pink-dark"] {
 }
 
 body[data-theme="green-dark"] {
+  --main-ff: "Delius Swash Caps";
+  --title-ff: "Carter One";
+  --fancy-ff: "Kablammo";
+  --link-color: #171742;
+  --main-body-bg: radial-gradient(circle, #171742 10%, #0f0f14 85%);
+  --main-color: #6bd831;
+  --secondary-color: #bcf693;
+  --txt: white;
+  --nav-bg: transparent;
+  --cta-color: #bcf693;
+  --txt2: #ffffff80;
+
+  --accent-color: #c7d6a1;
+}
+
+body[data-theme="green-light"] {
   --main-ff: "Delius Swash Caps";
   --title-ff: "Carter One";
   --fancy-ff: "Kablammo";
